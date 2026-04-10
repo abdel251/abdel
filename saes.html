@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio BUT R&T | Projets SAÉ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Portfolio</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="presentation.html">À propos</a></li>
+    <li><a href="saes.html" class="active">Projet</a></li>
+    <li><a href="bilan.html">Bilan</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="label">Travaux académiques</div>
+  <h2>Projets SAÉ</h2>
+  <p style="max-width:700px">Une documentation détaillée de chaque Situation d'Apprentissage et d'Évaluation. Pour chaque projet, vous trouverez : le contexte, les objectifs, mes réalisations concrètes (traces), et une analyse réflexive.</p>
+
+  <div class="divider"></div>
+
+  <!-- Semestre 1 -->
+  <div class="sae-header">
+    <h3>Premier Semestre (S1)</h3>
+  </div>
+
+  <div class="card-grid" style="margin-top:0; margin-bottom:4rem">
+    <div class="card sae-card">
+      <div class="sae-image-header">
+        <img src="https://via.placeholder.com/500x250/f4efeb/8c6e56?text=SAÉ+1.01+Image" alt="Illustration SAÉ 1.01">
+      </div>
+      <div class="sae-content">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem">
+          <span class="comp-id">SAÉ 11</span>
+          <span class="sae-badge badge-blue">S1</span>
+        </div>
+        <h3>Sensib. Hygièn Inform.</h3>
+        <p style="font-size:0.95rem">aa.</p>
+        <div class="sae-empty" style="padding:2rem 1rem">
+          <div class="sae-icon" style="font-size:2rem">📂</div>
+          <div style="font-size:0.9rem">Traces techniques et analyse à insérer</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card sae-card">
+      <div class="sae-image-header">
+        <img src="https://via.placeholder.com/500x250/f4efeb/8c6e56?text=SAÉ+1.02+Image" alt="Illustration SAÉ 1.02">
+      </div>
+      <div class="sae-content">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem">
+          <span class="comp-id">SAÉ 1.02</span>
+          <span class="sae-badge badge-purple">S1</span>
+        </div>
+        <h3>Initial. Réseaux Inform.</h3>
+        <p style="font-size:0.95rem">aaa</p>
+        <div class="sae-empty" style="padding:2rem 1rem">
+          <div class="sae-icon" style="font-size:2rem">📂</div>
+          <div style="font-size:0.9rem">Livrables et auto-évaluation à insérer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Semestre 2 -->
+  <div class="sae-header">
+    <h3>Deuxième Semestre (S2)</h3>
+  </div>
+
+  <div class="card-grid" style="margin-top:0">
+    <div class="card sae-card">
+      <div class="sae-image-header">
+        <img src="https://via.placeholder.com/500x250/f4efeb/8c6e56?text=SAÉ+2.01+Image" alt="Illustration SAÉ 2.01">
+      </div>
+      <div class="sae-content">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem">
+          <span class="comp-id">SAÉ 2.01</span>
+          <span class="sae-badge badge-green">S2</span>
+        </div>
+        <h3>Réseau d'une PME</h3>
+        <p style="font-size:0.95rem">Conception et déploiement complet d'une infrastructure réseau et système pour une petite entreprise.</p>
+        <div class="sae-empty" style="padding:2rem 1rem">
+          <div class="sae-icon" style="font-size:2rem">📂</div>
+          <div style="font-size:0.9rem">Architecture et confs à insérer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notice" style="margin-top:4rem">
+    <span class="notice-icon">＋</span>
+    <span>bla bla</span>
+  </div>
+</main>
+
+
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

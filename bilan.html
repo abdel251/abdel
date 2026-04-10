@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio BUT R&T | Bilan de compétences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Portfolio</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="presentation.html">À propos</a></li>
+    <li><a href="saes.html">Projets</a></li>
+    <li><a href="bilan.html" class="active">Bilan</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="label">Synthèse transversale</div>
+  <h2>Bilan de compétences</h2>
+  <p style="max-width:700px">A Complétez</p>
+
+  <div class="divider"></div>
+
+  <div class="comp-block">
+    <div class="comp-header">
+      <div>
+        <span class="comp-id">Compétence RT1</span>
+        <h3>Administrer les réseaux et l'Internet</h3>
+      </div>
+      <span class="sae-badge badge-blue">Niveau 2</span>
+    </div>
+    <div class="notice" style="margin-bottom:0; background-color:rgba(60,47,37,0.02); border-color:var(--border)">
+      <span class="notice-icon">✏</span>
+      <span>Rédigez ici votre synthèse globale pour : mes principales réussites techniques, les difficultés rencontrées (ex: routage complexe), et mes objectifs pour atteindre le niveau supérieur.</span>
+    </div>
+    <ul class="ac-list">
+      <li>AC21.01 – Configurer et dépanner le routage dynamique (OSPF, BGP)</li>
+      <li>AC21.02 – Implémenter une politique de QoS et sécuriser l'accès réseau</li>
+      <li>AC21.03 – Déployer et administrer des solutions virtualisées</li>
+      <li>AC21.06 – Travailler en équipe projet</li>
+    </ul>
+    <div class="progress-bar"><div class="progress-fill" data-width="70"></div></div>
+    <div style="font-size:0.8rem; color:var(--text-dim); margin-top:0.8rem; font-family:var(--font-mono)">Niveau auto-évalué : Intermédiaire +</div>
+  </div>
+
+  <div class="comp-block">
+    <div class="comp-header">
+      <div>
+        <span class="comp-id">Compétence Cyber</span>
+        <h3>Sécuriser les systèmes d'information</h3>
+      </div>
+      <span class="sae-badge badge-orange">Niveau 1</span>
+    </div>
+    <div class="notice" style="margin-bottom:0; background-color:rgba(60,47,37,0.02); border-color:var(--border)">
+      <span class="notice-icon">✏</span>
+      <span>Bilan Cyber : outils manipulés (Wireshark, Nmap, Metasploit), audits réalisés, et application des bonnes pratiques de durcissement (hardening).</span>
+    </div>
+    <ul class="ac-list">
+      <li>AC24.01 – Appliquer les recommandations de cybersécurité (ANSSI)</li>
+      <li>AC24.02 – Maîtriser les outils de sécurisation des infrastructures</li>
+      <li>AC25.02 – Utiliser des outils de test de pénétration</li>
+    </ul>
+    <div class="progress-bar"><div class="progress-fill" data-width="50"></div></div>
+    <div style="font-size:0.8rem; color:var(--text-dim); margin-top:0.8rem; font-family:var(--font-mono)">Niveau auto-évalué : En développement</div>
+  </div>
+</main>
+
+
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Animation des barres de progression au chargement
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.querySelectorAll('.progress-fill').forEach(el => {
+        el.style.width = (el.getAttribute('data-width') || '0') + '%';
+      });
+    }, 400);
+  });
+</script>
+</body>
+</html>
